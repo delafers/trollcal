@@ -41,9 +41,7 @@ const Grid = () => {
                 setActiveDay(n => !n)
             }}>{`${div[i]}`}</div></StyledDay>)}
         </GridStyled>
-            <div style={{backgroundColor:`${active}`}} onClick={() => { setActiveDay("green")}}>
 
-            </div>
     </>
     );
 };
