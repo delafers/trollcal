@@ -1,0 +1,87 @@
+.modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.modal__content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #8d91b6;
+    width: 30vw;
+    height: auto;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.modal__content textarea{
+    background-color: #FDFFDF;
+    color: #8d91b6;
+    border: 1px solid #252e4b;
+    height: 4vh;
+    padding-top: 10px;
+    width: 100%;
+}
+modal__content_img img{
+    max-width: 20%;
+}
+.close{
+    padding: 0px 5px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid #50b5ff;
+    color: darkgray;
+    background-color: #182039;
+    pointer-events: visible;
+    cursor: pointer;
+    width: 100%;
+}
+.modal_img {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.7s;
+}
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+;}
+
+
+.modal__content h2{
+    color: #50b5ff;
+}
+
+.modal__content button{
+    background-color: #50b5ff;
+    border: #50b5ff solid 1px;
+    color: white;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.modal__content.active{
+    transform: scale(1);
+}
+.buttons{
+
+}
